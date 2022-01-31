@@ -6,7 +6,9 @@
 <div class="container py-5">
     <div class="row">
 
-        {% include "_message_flash_html.twig %}
+        {% include "_messages_flash.html.twig" %}
+        
+        
 
         <div class="col-12 d-flex align-items-center justify-content-between">
             <h3>Liste des catégories</h3>
@@ -15,8 +17,9 @@
 
        
             {% for category in categories %}
+
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card" style="width: 18rem">
+                <div class="card" style="width: 18rem;">
                     <img src="{{ category.imagePath }}" class="card-img-top imageCard" alt="image_category">
                     <div class="card-body">
                         <h5 class="card-title">{{ category.name}}</h5>                        
