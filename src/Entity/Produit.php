@@ -17,7 +17,7 @@ class Produit
     private $name;
 
     #[ORM\Column(type: 'integer')]
-    private $prix;
+    private $price;
 
     #[ORM\Column(type: 'string', length: 255)]
     private $imagePath;
@@ -45,14 +45,14 @@ class Produit
         return $this;
     }
 
-    public function getPrix(): ?int
+    public function getPrice(): ?int
     {
-        return $this->prix;
+        return $this->price;
     }
 
-    public function setPrix(int $prix): self
+    public function setPrice(int $price): self
     {
-        $this->prix = $prix;
+        $this->price = $price;
 
         return $this;
     }

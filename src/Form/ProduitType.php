@@ -23,7 +23,7 @@ class ProduitType extends AbstractType
                     'placeholder' => 'Ecrire ici le nom...'  
                 ]
             ])
-            ->add('prix', MoneyType::class,[
+            ->add('price', MoneyType::class,[
                 'label' => 'Prix du produit',
                 'required' => false,
                 'divisor' => 100,
